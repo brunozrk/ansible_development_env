@@ -1,0 +1,19 @@
+- name: Update and cache apt-get
+  apt: update_cache=yes cache_valid_time=3600
+
+- name: Install common packages
+  apt: name={{item}} state=present
+  with_items:
+    - python-pip
+    - git
+    - git-gui
+    - vim
+    - mysql-server
+    - curl
+    - libpq-dev
+    - libmagickwand-dev
+    - nodejs
+    - postgresql
+    - postgresql-contrib
+    - python-dev
+  tags: install_packages
