@@ -1,0 +1,15 @@
+---
+- name: Add repository for sublime install
+  apt_repository: >
+    repo='ppa:webupd8team/sublime-text-2'
+    state=present
+  tags: sublime
+
+- name: Install sublime
+  apt: >
+    pkg=sublime-text
+    update_cache=yes
+    cache_valid_time=3600
+    state=latest
+    force=yes
+  tags: sublime
