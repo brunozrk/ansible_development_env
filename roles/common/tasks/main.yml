@@ -17,3 +17,8 @@
     - postgresql-contrib
     - python-dev
   tags: install_packages
+
+- name: Create Projects directory
+  file: path={{ lookup('env','HOME') }}/Projects2 state=directory
+  sudo: no
+  tags: project_dir
