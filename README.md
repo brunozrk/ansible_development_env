@@ -17,6 +17,8 @@ ansible:
     git clone git@github.com:brunozrk/ansible_development_env.git
     cd ansible_development_env
 
+- edit `vars/defaults.yml` with your preferences.
+
 ## Usage
 
     ansible-playbook playbook.yml --ask-sudo-pass
