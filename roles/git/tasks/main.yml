@@ -2,5 +2,5 @@
  - name: Git global config
    template: >
      src=gitconfig.j2
-     dest={{ lookup('env','HOME') }}/.gitconfig
+     dest={{local_home}}/.gitconfig
    tags: git

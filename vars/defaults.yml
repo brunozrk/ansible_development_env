@@ -1,0 +1,5 @@
+local_home: "{{ lookup('env', 'HOME') }}"
+
+# Git
+git_name:  brunozrk
+git_email: brunozrk@gmail.com

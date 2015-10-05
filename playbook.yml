@@ -2,6 +2,8 @@
 - name: Development Environment
   hosts: local
   sudo: yes
+  vars_files:
+    - vars/defaults.yml
 
   roles:
     - common
