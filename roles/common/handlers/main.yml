@@ -1,0 +1,7 @@
+---
+- name: reload bash_profile
+  sudo: no
+  shell: source {{ lookup('env', 'HOME') }}/.bash_profile
+  args:
+     executable: /bin/bash
+

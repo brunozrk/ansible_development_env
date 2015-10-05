@@ -22,3 +22,10 @@
   file: path={{ lookup('env','HOME') }}/Projects2 state=directory
   sudo: no
   tags: project_dir
+
+- name: Create ~/.bash_profile
+  template: >
+    src=bash_profile.j2
+    dest={{ lookup('env', 'HOME') }}/.bash_profile
+  notify: reload bash_profile
+  tags: bash_profile
