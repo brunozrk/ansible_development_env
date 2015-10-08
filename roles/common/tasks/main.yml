@@ -16,6 +16,8 @@
     - postgresql
     - postgresql-contrib
     - python-dev
+    - mysql-client
+    - libmysqlclient-dev
   tags: install_packages
 
 - name: Create Projects directory
