@@ -18,6 +18,7 @@
     - python-dev
     - mysql-client
     - libmysqlclient-dev
+    - redis-server
   tags: install_packages
 
 - name: Create Projects directory
