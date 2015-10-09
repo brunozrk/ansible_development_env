@@ -19,6 +19,7 @@
     - mysql-client
     - libmysqlclient-dev
     - redis-server
+    - indicator-multiload
   tags: install_packages
 
 - name: Create Projects directory
