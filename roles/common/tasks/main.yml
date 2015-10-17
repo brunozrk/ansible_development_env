@@ -38,3 +38,9 @@
     dest={{local_home}}/.bash_profile
   notify: reload bash_profile
   tags: bash_profile
+
+- name: Highlight selected tab terminal
+  template: >
+    src=gtk.css.j2
+    dest={{local_home}}/.config/gtk-3.0/gtk.css
+  tags: terminal
