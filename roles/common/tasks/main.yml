@@ -22,6 +22,11 @@
     - indicator-multiload
   tags: install_packages
 
+- name: Install heroku toolbelt
+  sudo: no
+  shell: wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+  tags: heroku
+
 - name: Create Projects directory
   file: path={{local_home}}/Projects2 state=directory
   sudo: no
