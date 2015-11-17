@@ -20,6 +20,7 @@
     - libmysqlclient-dev
     - redis-server
     - indicator-multiload
+    - awscli
   tags: install_packages
 
 - name: Install heroku toolbelt
